@@ -1,6 +1,6 @@
 $(function () {
+    amenities = {};
     $('li input[type=checkbox]').change(function () {
-        amenities = {};
         if (this.checked) {
             amenities[this.dataset.name] = this.dataset.id;
         } else {
